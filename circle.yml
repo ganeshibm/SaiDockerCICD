@@ -4,10 +4,10 @@
 # curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/steveduitsman/pluralsight-docker-ci-master/trigger/faeb024f-a2e5-47b8-b038-d5e01dbe57ce/
 
 deployment:
-  hub:
+  dockerhub:
     branch: master
     commands:
-       bash -c "$DOCKER_HUB_TRIGGER"
+      - $DOCKER_HUB_TRIGGER
 
 test:
   override:    
