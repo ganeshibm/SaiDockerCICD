@@ -7,7 +7,7 @@ deployment:
   dockerhub:
     branch: master
     commands:
-      - bash -c "$DOCKER_HUB_TRIGGER"
+        - $DOCKER_HUB_TRIGGER
 
 test:
   override:    
